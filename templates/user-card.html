@@ -1,0 +1,10 @@
+{{define "user-card"}}
+<div class="card" style="width:200rem">
+     <div class="card-body">
+        <h5>{{.Name}}</h5>
+        <h6>{{.Username}}</h6>
+        <a type="button" href="/update?username={{.Username}}&name={{.Name}}">Update</a>
+        <a type="button" href="/delete?username={{.Username}}&name={{.Name}}">Delete</a>
+     </div>
+</div>
+{{end}}
